@@ -51,10 +51,18 @@ transition: all .6s;
     }
 .hidden-content {
     opacity: 1;
+   
+}
+
+.movie-infos:has(.description) .hidden-content {
     height: 100px;
 }
 
+.movie-infos:not(:has(.description)) .hidden-content {
+height: 50px;
+
 }
 
 
+}
 }
