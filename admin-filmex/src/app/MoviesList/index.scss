@@ -1,8 +1,7 @@
-.movie-card {
-
-    color:#fff;
-
-    .description {
-      color: rgb(232, 255, 127);  
-    }
+.movie-list {
+display: grid;
+grid-template-columns: (auto-fit,minmax(200px,1fr));
+gap: 16px ;
+list-style:none;
+width: 100%;
 }

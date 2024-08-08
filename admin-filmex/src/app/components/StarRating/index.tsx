@@ -1,6 +1,6 @@
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { MdOutlineStarBorder } from "react-icons/md";
-
+import './index.scss'
 export interface Props {
     rating: number;
 }
@@ -19,7 +19,7 @@ export default function StarRating(props: Props) {
     }
 
     return (
-        <div>
+        <div className="movie-rate">
             {fullstars.map((_, index) => (
                 <MdOutlineStarPurple500 key={`full-${index}`} />
             ))}
